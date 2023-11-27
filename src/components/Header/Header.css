@@ -1,0 +1,277 @@
+/* HEADER */
+/* Mettre à la bonne taille le logo dans le Header */
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100; /* Assure que le Header reste au-dessus du contenu */
+  opacity: 0.6; /* Opacité 0.6 */
+  transition: 1.5s;
+}
+
+.logo {
+  width: 10rem;
+  height: auto;
+}
+
+/* effet sur la navbar */
+.BurgerMenu {
+  display: none;
+}
+
+.NavBar {
+  color: white; /* Couleur du texte par défaut */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease; /* Transition de couleur de fond */
+}
+
+.navBar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navBar .active_burger::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Styles pour le logo et autres éléments de la navbar */
+.logo {
+  max-width: 100px; /* Largeur du logo */
+  margin-left: 2rem;
+}
+
+/* Mise en place de la navBar */
+.navBar {
+  height: 5rem;
+  background-image: url(../images/BG_HEAD_FOOT/studio-background.jpg);
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  /* créer un espace égal entre chaques éléments */
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navBar a {
+  color: white;
+}
+
+.navBar .Nav-links ul {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.navBar .Nav-links ul li {
+  margin: 0 25px;
+}
+
+.navBar .Nav-links ul li.active_burger a {
+  color: #ffc0cb;
+  font-weight: bold;
+  font-size: larger;
+  font-style: oblique;
+}
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  .navBar {
+    min-height: 5rem;
+    height: auto;
+  }
+
+  .logo {
+    position: absolute;
+    top: 1rem;
+  }
+
+  .BurgerMenu {
+    display: flex;
+    position: absolute;
+    right: 2rem;
+    top: 1.7rem;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    margin-top: 1.8rem;
+    margin-bottom: 0.25rem;
+    margin-left: 10px;
+  }
+
+  nav .open {
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 361px) and (max-width: 393px) {
+  .navBar {
+    min-height: 5rem;
+    height: auto;
+  }
+
+  .logo {
+    position: absolute;
+    top: 1rem;
+  }
+
+  .BurgerMenu {
+    display: flex;
+    position: absolute;
+    right: 2rem;
+    top: 1.7rem;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    margin-top: 1.8rem;
+    margin-bottom: 0.25rem;
+    margin-left: 10px;
+  }
+
+  nav .open {
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 394px) and (max-width: 412px) {
+  .navBar {
+    min-height: 5rem;
+    height: auto;
+  }
+
+  .logo {
+    position: absolute;
+    top: 1rem;
+  }
+
+  .BurgerMenu {
+    display: flex;
+    position: absolute;
+    right: 2rem;
+    top: 1.7rem;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    margin-top: 1.8rem;
+    margin-bottom: 0.25rem;
+    margin-left: 10px;
+  }
+
+  nav .open {
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 413px) and (max-width: 414px) {
+  .navBar {
+    min-height: 5rem;
+    height: auto;
+  }
+
+  .logo {
+    position: absolute;
+    top: 1rem;
+  }
+
+  .BurgerMenu {
+    display: flex;
+    position: absolute;
+    right: 2rem;
+    top: 1.7rem;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    margin-top: 1.8rem;
+    margin-bottom: 0.25rem;
+    margin-left: 10px;
+  }
+
+  nav .open {
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 428px) {
+  .navBar {
+    min-height: 5rem;
+    height: auto;
+  }
+
+  .logo {
+    position: absolute;
+    top: 1rem;
+  }
+
+  .BurgerMenu {
+    display: flex;
+    position: absolute;
+    right: 2rem;
+    top: 1.7rem;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    margin-top: 1.8rem;
+    margin-bottom: 0.25rem;
+    margin-left: 10px;
+  }
+
+  nav .open {
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 799px) {
+  .navBar {
+    min-height: 5rem;
+    height: auto;
+  }
+
+  .logo {
+    position: absolute;
+    top: 1rem;
+  }
+
+  .BurgerMenu {
+    display: flex;
+    position: absolute;
+    right: 2rem;
+    top: 1.7rem;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    margin-top: 1.8rem;
+    margin-bottom: 0.25rem;
+    margin-left: 10px;
+  }
+
+  nav .open {
+    width: 100%;
+    display: flex;
+  }
+}

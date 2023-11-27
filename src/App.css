@@ -1,38 +1,87 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Modification de base sur la page  */
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+b {
   text-align: center;
+  color: #722375;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-separator {
+  background-color: #722375;
+  height: 3px;
+  width: 50%;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn {
+  border: none;
+  border-radius: 0.438rem;
+  box-shadow: -0.5em 0.5em 0.4em black;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #eeeeee;
+  font-weight: 500;
+  font-size: 0.75rem;
+  background-color: #722375;
+  padding: 0.938rem 3.125rem;
+  margin: 0 auto;
+  /* margin-left: 6rem; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 470%;
+  width: 140%;
+  background: pink;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+  transform: translateX(-100%) translateY(-25%) rotate(45deg);
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover:after {
+  -webkit-transform: rotate(39deg);
+  transform: translateX(-7%) translateY(-28.5%) rotate(39deg);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn a:hover {
+  color: black;
+  opacity: 1;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  opacity: 0, 7;
+  color: pink;
+  transition: 0.3s;
 }
