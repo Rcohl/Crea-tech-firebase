@@ -10,6 +10,7 @@ import { BrowserRouter } from "react-router-dom";
 import Cookie from "./components/Cookie/Cookie";
 
 function App() {
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -22,7 +23,7 @@ function App() {
       <br />
       <Contact />
       <Footer />
-      <Cookie/>
+      <Cookie />
     </div>
   );
 }
